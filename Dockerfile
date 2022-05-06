@@ -1,8 +1,8 @@
 FROM vborja/asdf-ubuntu:latest
 
-ADD nodejs .asdf/toolset/nodejs
+ADD java .asdf/toolset/java
 
 USER root
-RUN bash .asdf/toolset/nodejs/build-deps
+RUN bash .asdf/toolset/java/build-deps
 USER asdf
-RUN asdf-install-toolset nodejs
+RUN asdf-install-toolset java
